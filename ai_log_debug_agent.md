@@ -291,24 +291,25 @@ Para a primeira versão do projeto, o escopo pode ser reduzido para:
 
 ---
 
-## 9. Estrutura sugerida do repositório
+## 9. Estrutura sugerida dos repositórios
+
+O projeto pode ser organizado com um **repositório agregador** e um repositório separado para cada serviço. O agregador centraliza a documentação, arquivos de infraestrutura e o `docker-compose.yml` usado para subir todos os serviços e bancos de dados juntos no ambiente local.
+
+Os serviços entram no repositório agregador como **Git submodules**, permitindo que cada aplicação evolua de forma independente, mas ainda possa ser versionada em conjunto por uma referência fixa no agregador.
 
 ```txt
 ai-log-debug-agent/
-  apps/
-    admin-web/
-    backend-api/
-    log-ingestor/
-    log-worker/
-    ai-agent-service/
-    docs-rag-service/
+  .gitmodules
 
-  packages/
-    shared-types/
-    eslint-config/
+  services/
+    admin-web/              # submodule: ai-log-debug-agent-admin-web
+    backend-api/            # submodule: ai-log-debug-agent-backend-api
+    log-ingestor/           # submodule: ai-log-debug-agent-log-ingestor
+    log-worker/             # submodule: ai-log-debug-agent-log-worker
+    ai-agent-service/       # submodule: ai-log-debug-agent-ai-agent-service
+    docs-rag-service/       # submodule: ai-log-debug-agent-docs-rag-service
 
   infra/
-    docker/
     opensearch/
     otel-collector/
     grafana/
@@ -319,11 +320,14 @@ ai-log-debug-agent/
     api-contracts.md
     database-model.md
     observability.md
+    local-development.md
 
   docker-compose.yml
-  README.md
   .env.example
+  README.md
 ```
+
+O `docker-compose.yml` do agregador deve configurar a execução local completa, incluindo os serviços da aplicação, Redis, PostgreSQL, OpenSearch, banco vetorial, Jaeger/Tempo, Prometheus e Grafana.
 
 ---
 
