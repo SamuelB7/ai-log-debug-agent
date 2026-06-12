@@ -1,0 +1,18 @@
+[submodule "services/admin-web"]
+	path = services/admin-web
+	url = https://github.com/SamuelB7/ai_log_agent_admin.git
+[submodule "services/backend-api"]
+	path = services/backend-api
+	url = https://github.com/SamuelB7/ai_log_agent_backend_api.git
+[submodule "services/log-ingestor"]
+	path = services/log-ingestor
+	url = https://github.com/SamuelB7/ai_agent_log_ingestor.git
+[submodule "services/log-worker"]
+	path = services/log-worker
+	url = https://github.com/SamuelB7/ai_agent_log_worker.git
+[submodule "services/ai-agent-service"]
+	path = services/ai-agent-service
+	url = https://github.com/SamuelB7/ai-agent-service.git
+[submodule "services/docs-rag-service"]
+	path = services/docs-rag-service
+	url = https://github.com/SamuelB7/ai_agent_rag_service.git
