@@ -21,13 +21,23 @@ services:
   backend-api:
     build:
       context: ./services/backend-api
-    command: npm run start:dev
+    command: sh -c "npx prisma migrate deploy && npx prisma db seed && npm run start:dev"
     environment:
       PORT: 3000
       DATABASE_URL: ${DATABASE_URL}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      ADMIN_NAME: ${ADMIN_NAME}
+      JWT_SECRET: ${JWT_SECRET}
+      JWT_EXPIRES_IN: ${JWT_EXPIRES_IN}
       REDIS_URL: ${REDIS_URL}
       AI_AGENT_URL: ${AI_AGENT_URL}
       DOCS_RAG_URL: ${DOCS_RAG_URL}
+      OPENSEARCH_URL: ${OPENSEARCH_URL}
+      OPENSEARCH_INDEX: ${OPENSEARCH_INDEX}
+      GITHUB_TOKEN: ${GITHUB_TOKEN}
+      GITHUB_OWNER: ${GITHUB_OWNER}
+      GITHUB_REPO: ${GITHUB_REPO}
       OTEL_EXPORTER_OTLP_ENDPOINT: ${OTEL_EXPORTER_OTLP_ENDPOINT}
     ports:
       - "3000:3000"
@@ -266,4 +276,3 @@ volumes:
   qdrant_data:
   prometheus_data:
   grafana_data:
-

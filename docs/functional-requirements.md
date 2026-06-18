@@ -50,49 +50,49 @@ Use os checkboxes para marcar requisitos conforme forem implementados. Cada item
 
 ## Backend API / BFF
 
-- [ ] **BFF-001 - Autenticação de usuários**  
+- [x] **BFF-001 - Autenticação de usuários**  
   Descrição: expor endpoints para autenticar usuários e emitir credenciais de acesso.
 
-- [ ] **BFF-002 - Autorização de requisições**  
+- [x] **BFF-002 - Autorização de requisições**  
   Descrição: validar credenciais em rotas protegidas e impedir acesso não autorizado.
 
-- [ ] **BFF-003 - Gerenciamento de usuários**  
+- [x] **BFF-003 - Gerenciamento de usuários**  
   Descrição: manter dados básicos de usuários necessários para autenticação, autoria e auditoria.
 
-- [ ] **BFF-004 - Controle de permissões**  
+- [x] **BFF-004 - Controle de permissões**  
   Descrição: permitir diferenciação de acessos para ações administrativas, consultas e integrações externas.
 
-- [ ] **BFF-005 - Persistência de conversas**  
+- [x] **BFF-005 - Persistência de conversas**  
   Descrição: salvar conversas iniciadas pelo usuário, incluindo mensagens enviadas e respostas recebidas do agente.
 
-- [ ] **BFF-006 - Persistência de mensagens**  
+- [x] **BFF-006 - Persistência de mensagens**  
   Descrição: registrar cada mensagem com autoria, ordem, timestamp e vínculo com a conversa.
 
-- [ ] **BFF-007 - Proxy seguro para AI Agent Service**  
+- [x] **BFF-007 - Proxy seguro para AI Agent Service**  
   Descrição: receber mensagens do painel, persistir o pedido e encaminhar a solicitação ao serviço de IA sem expor o serviço diretamente ao frontend.
 
-- [ ] **BFF-008 - Persistência de respostas do agente**  
+- [x] **BFF-008 - Persistência de respostas do agente**  
   Descrição: salvar resposta final, evidências, logs relacionados, tools usadas e metadados da execução.
 
-- [ ] **BFF-009 - Consulta de logs salvos**  
+- [x] **BFF-009 - Consulta de logs salvos**  
   Descrição: expor API para consultar logs por filtros estruturados e retornar resultados para o painel.
 
-- [ ] **BFF-010 - Persistência de incidentes**  
+- [x] **BFF-010 - Persistência de incidentes**  
   Descrição: salvar incidentes gerados a partir das investigações, incluindo título, descrição, severidade, evidências e status.
 
-- [ ] **BFF-011 - Persistência de relatórios técnicos**  
+- [x] **BFF-011 - Persistência de relatórios técnicos**  
   Descrição: salvar relatórios de incidente produzidos pelo agente para consulta posterior.
 
-- [ ] **BFF-012 - Auditoria de ações do agente**  
+- [x] **BFF-012 - Auditoria de ações do agente**  
   Descrição: registrar ações executadas pelo agente, incluindo tool chamada, parâmetros principais, usuário solicitante e resultado.
 
-- [ ] **BFF-013 - Integração com GitHub Issue Tool**  
+- [x] **BFF-013 - Integração com GitHub Issue Tool**  
   Descrição: receber solicitação do painel ou do agente e encaminhar criação de issue no GitHub quando configurado.
 
-- [ ] **BFF-014 - Cache e estado operacional com Redis**  
+- [x] **BFF-014 - Cache e estado operacional com Redis**  
   Descrição: usar Redis para necessidades operacionais do backend, como cache, filas auxiliares ou controle de estado temporário.
 
-- [ ] **BFF-015 - Health check do backend**  
+- [x] **BFF-015 - Health check do backend**  
   Descrição: expor endpoint de saúde para validar que o serviço está disponível no ambiente local e em deploy futuro.
 
 ## Log Ingestor API
@@ -287,4 +287,3 @@ Use os checkboxes para marcar requisitos conforme forem implementados. Cada item
 
 - [ ] **INF-012 - Comandos de validação local**  
   Descrição: documentar comandos para validar submodules, compose e health checks dos serviços.
-
