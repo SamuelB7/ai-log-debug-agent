@@ -129,37 +129,37 @@ Use os checkboxes para marcar requisitos conforme forem implementados. Cada item
 
 ## Log Processor Worker
 
-- [ ] **WRK-001 - Consumo assíncrono da fila**  
+- [x] **WRK-001 - Consumo assíncrono da fila**  
   Descrição: consumir logs publicados pelo Log Ingestor na fila Redis/BullMQ.
 
-- [ ] **WRK-002 - Retry de processamento**  
+- [x] **WRK-002 - Retry de processamento**  
   Descrição: permitir nova tentativa para logs que falharem por erro transitório.
 
-- [ ] **WRK-003 - Registro de falhas definitivas**  
+- [x] **WRK-003 - Registro de falhas definitivas**  
   Descrição: registrar logs que não puderem ser processados após as tentativas configuradas.
 
-- [ ] **WRK-004 - Normalização completa de logs**  
+- [x] **WRK-004 - Normalização completa de logs**  
   Descrição: consolidar campos do log em formato consistente para busca e persistência.
 
-- [ ] **WRK-005 - Extração de campos importantes**  
+- [x] **WRK-005 - Extração de campos importantes**  
   Descrição: extrair serviço, ambiente, nível, mensagem, timestamp, request ID, trace ID e metadados relevantes.
 
-- [ ] **WRK-006 - Detecção de stack trace**  
+- [x] **WRK-006 - Detecção de stack trace**  
   Descrição: identificar stack traces em logs e separar esse conteúdo para busca e análise.
 
-- [ ] **WRK-007 - Indexação no OpenSearch**  
+- [x] **WRK-007 - Indexação no OpenSearch**  
   Descrição: gravar logs processados no OpenSearch para busca eficiente por filtros e texto.
 
-- [ ] **WRK-008 - Persistência de metadados no PostgreSQL**  
+- [x] **WRK-008 - Persistência de metadados no PostgreSQL**  
   Descrição: salvar metadados necessários para histórico, auditoria, agrupamentos e relacionamento com incidentes.
 
-- [ ] **WRK-009 - Agrupamento básico de erros semelhantes**  
+- [x] **WRK-009 - Agrupamento básico de erros semelhantes**  
   Descrição: identificar erros parecidos com base em mensagem, stack trace ou assinatura normalizada.
 
-- [ ] **WRK-010 - Idempotência de processamento**  
+- [x] **WRK-010 - Idempotência de processamento**  
   Descrição: evitar duplicidade quando o mesmo log ou job for processado mais de uma vez.
 
-- [ ] **WRK-011 - Logs operacionais do worker**  
+- [x] **WRK-011 - Logs operacionais do worker**  
   Descrição: registrar início, sucesso, falha e tempo de processamento de cada job.
 
 ## AI Agent Service
