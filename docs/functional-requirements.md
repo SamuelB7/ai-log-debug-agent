@@ -220,34 +220,34 @@ Use os checkboxes para marcar requisitos conforme forem implementados. Cada item
 
 ## Docs RAG Service
 
-- [ ] **RAG-001 - Upload de documentos Markdown**  
+- [x] **RAG-001 - Upload de documentos Markdown**  
   Descrição: permitir entrada de documentos Markdown para compor a base técnica consultável.
 
-- [ ] **RAG-002 - Importação de documentação técnica**  
+- [x] **RAG-002 - Importação de documentação técnica**  
   Descrição: aceitar documentos do projeto para indexação, incluindo guias, contratos, arquitetura e runbooks.
 
-- [ ] **RAG-003 - Processamento de documentos**  
+- [x] **RAG-003 - Processamento de documentos**  
   Descrição: quebrar documentos em trechos pesquisáveis com metadados de origem.
 
-- [ ] **RAG-004 - Geração de embeddings**  
+- [x] **RAG-004 - Geração de embeddings**  
   Descrição: transformar trechos de documentação em vetores usando provedor configurado.
 
-- [ ] **RAG-005 - Indexação vetorial no Qdrant**  
+- [x] **RAG-005 - Indexação vetorial no Qdrant**  
   Descrição: salvar embeddings e metadados no banco vetorial para busca semântica.
 
-- [ ] **RAG-006 - Busca semântica de documentação**  
+- [x] **RAG-006 - Busca semântica de documentação**  
   Descrição: retornar trechos relevantes de documentação para uma pergunta ou contexto de investigação.
 
-- [ ] **RAG-007 - Resposta com fontes**  
+- [x] **RAG-007 - Resposta com fontes**  
   Descrição: incluir referência do documento, título ou caminho de origem nos resultados retornados.
 
-- [ ] **RAG-008 - Reindexação de documentos**  
+- [x] **RAG-008 - Reindexação de documentos**  
   Descrição: permitir atualizar documentos já indexados quando o conteúdo mudar.
 
-- [ ] **RAG-009 - API para tool `search_docs`**  
+- [x] **RAG-009 - API para tool `search_docs`**  
   Descrição: expor endpoint consumível pelo AI Agent Service para pesquisa de documentação.
 
-- [ ] **RAG-010 - Health check do RAG**  
+- [x] **RAG-010 - Health check do RAG**  
   Descrição: expor endpoint de saúde para validar disponibilidade do serviço.
 
 ## Repositório Agregador / Ambiente Local
