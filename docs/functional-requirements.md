@@ -97,34 +97,34 @@ Use os checkboxes para marcar requisitos conforme forem implementados. Cada item
 
 ## Log Ingestor API
 
-- [ ] **ING-001 - Endpoint HTTP de ingestão**  
+- [x] **ING-001 - Endpoint HTTP de ingestão**  
   Descrição: receber logs enviados por aplicações monitoradas via endpoint HTTP.
 
-- [ ] **ING-002 - Suporte a logs JSON**  
+- [x] **ING-002 - Suporte a logs JSON**  
   Descrição: aceitar payloads de log em JSON como formato principal de ingestão.
 
-- [ ] **ING-003 - Validação de payload**  
+- [x] **ING-003 - Validação de payload**  
   Descrição: validar campos obrigatórios, tipos de dados e formato antes de aceitar um log.
 
-- [ ] **ING-004 - Normalização inicial de logs**  
+- [x] **ING-004 - Normalização inicial de logs**  
   Descrição: padronizar campos recebidos para um formato comum antes de publicar na fila.
 
-- [ ] **ING-005 - Autenticação por API key**  
+- [x] **ING-005 - Autenticação por API key**  
   Descrição: exigir chave de API para impedir ingestão não autorizada.
 
-- [ ] **ING-006 - Rate limiting de ingestão**  
+- [x] **ING-006 - Rate limiting de ingestão**  
   Descrição: limitar volume de requisições por origem ou API key para proteger o serviço.
 
-- [ ] **ING-007 - Envio para fila Redis/BullMQ**  
+- [x] **ING-007 - Envio para fila Redis/BullMQ**  
   Descrição: publicar logs válidos em fila assíncrona para processamento pelo worker.
 
-- [ ] **ING-008 - Resposta de aceite de ingestão**  
+- [x] **ING-008 - Resposta de aceite de ingestão**  
   Descrição: retornar status claro indicando se o log foi aceito, rejeitado ou enfileirado.
 
-- [ ] **ING-009 - Tratamento de erros de ingestão**  
+- [x] **ING-009 - Tratamento de erros de ingestão**  
   Descrição: retornar mensagens de erro seguras e úteis para payload inválido, autenticação falha e indisponibilidade da fila.
 
-- [ ] **ING-010 - Health check do ingestor**  
+- [x] **ING-010 - Health check do ingestor**  
   Descrição: expor endpoint de saúde para validar disponibilidade do serviço.
 
 ## Log Processor Worker
