@@ -6,46 +6,46 @@ Use os checkboxes para marcar requisitos conforme forem implementados. Cada item
 
 ## Admin Web Panel
 
-- [ ] **ADM-001 - Login de usuário**  
+- [x] **ADM-001 - Login de usuário**  
   Descrição: permitir que usuários acessem o painel administrativo por fluxo de autenticação.
 
-- [ ] **ADM-002 - Encerramento de sessão**  
+- [x] **ADM-002 - Encerramento de sessão**  
   Descrição: permitir logout e invalidação visual da sessão ativa no painel.
 
-- [ ] **ADM-003 - Rotas protegidas**  
+- [x] **ADM-003 - Rotas protegidas**  
   Descrição: bloquear telas administrativas para usuários não autenticados.
 
-- [ ] **ADM-004 - Chat com agente de IA**  
+- [x] **ADM-004 - Chat com agente de IA**  
   Descrição: permitir envio de perguntas em linguagem natural para investigar logs, erros, traces e incidentes.
 
-- [ ] **ADM-005 - Exibição de respostas do agente**  
+- [x] **ADM-005 - Exibição de respostas do agente**  
   Descrição: mostrar respostas técnicas do agente com texto estruturado, evidências, logs relacionados e próximos passos.
 
-- [ ] **ADM-006 - Histórico de conversas**  
+- [x] **ADM-006 - Histórico de conversas**  
   Descrição: listar conversas anteriores e permitir retomada de uma investigação salva.
 
-- [ ] **ADM-007 - Detalhes da conversa**  
+- [x] **ADM-007 - Detalhes da conversa**  
   Descrição: exibir mensagens do usuário, respostas do agente, tools usadas e contexto retornado.
 
-- [ ] **ADM-008 - Visualização de logs relacionados**  
+- [x] **ADM-008 - Visualização de logs relacionados**  
   Descrição: mostrar logs retornados pelo agente ou pela busca direta, preservando campos importantes como serviço, ambiente, nível, timestamp, request ID e trace ID.
 
-- [ ] **ADM-009 - Filtros de logs**  
+- [x] **ADM-009 - Filtros de logs**  
   Descrição: permitir filtrar logs por serviço, ambiente, nível, período, mensagem, request ID e trace ID.
 
-- [ ] **ADM-010 - Tela de incidentes**  
+- [x] **ADM-010 - Tela de incidentes**  
   Descrição: listar incidentes e relatórios gerados durante investigações.
 
-- [ ] **ADM-011 - Detalhe de investigação**  
+- [x] **ADM-011 - Detalhe de investigação**  
   Descrição: apresentar uma visão consolidada da investigação com pergunta inicial, evidências, logs, hipótese de causa raiz e relatório gerado.
 
-- [ ] **ADM-012 - Geração de issue no GitHub**  
+- [x] **ADM-012 - Geração de issue no GitHub**  
   Descrição: oferecer ação para solicitar criação de issue no GitHub a partir de um relatório de investigação.
 
-- [ ] **ADM-013 - Estados de carregamento e erro**  
+- [x] **ADM-013 - Estados de carregamento e erro**  
   Descrição: informar quando consultas, respostas do agente e buscas de logs estiverem carregando, vazias ou com erro.
 
-- [ ] **ADM-014 - Navegação principal**  
+- [x] **ADM-014 - Navegação principal**  
   Descrição: disponibilizar navegação para chat, histórico, logs, incidentes e detalhes de investigação.
 
 ## Backend API / BFF
