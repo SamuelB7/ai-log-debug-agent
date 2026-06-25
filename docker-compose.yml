@@ -110,17 +110,29 @@ services:
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     environment:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
+      AI_AGENT_MODEL: ${AI_AGENT_MODEL}
+      AI_AGENT_HISTORY_LIMIT: ${AI_AGENT_HISTORY_LIMIT}
+      AI_AGENT_REQUEST_TIMEOUT_SECONDS: ${AI_AGENT_REQUEST_TIMEOUT_SECONDS}
       BACKEND_API_URL: http://backend-api:3000
+      DATABASE_URL: ${DATABASE_URL}
       OPENSEARCH_URL: ${OPENSEARCH_URL}
+      OPENSEARCH_INDEX: ${OPENSEARCH_INDEX}
       DOCS_RAG_URL: ${DOCS_RAG_URL}
+      GITHUB_TOKEN: ${GITHUB_TOKEN}
+      GITHUB_OWNER: ${GITHUB_OWNER}
+      GITHUB_REPO: ${GITHUB_REPO}
       OTEL_EXPORTER_OTLP_ENDPOINT: ${OTEL_EXPORTER_OTLP_ENDPOINT}
     ports:
       - "8000:8000"
     volumes:
       - ./services/ai-agent-service:/app
     depends_on:
+      postgres:
+        condition: service_healthy
       opensearch:
         condition: service_healthy
+      docs-rag-service:
+        condition: service_started
     networks:
       - debug-agent
 

@@ -164,58 +164,58 @@ Use os checkboxes para marcar requisitos conforme forem implementados. Cada item
 
 ## AI Agent Service
 
-- [ ] **AGT-001 - Endpoint de conversa**  
+- [x] **AGT-001 - Endpoint de conversa**  
   Descrição: expor endpoint para receber perguntas do usuário e retornar respostas do agente.
 
-- [ ] **AGT-002 - Gerenciamento de estado da conversa**  
+- [x] **AGT-002 - Gerenciamento de estado da conversa**  
   Descrição: manter contexto mínimo da conversa para interpretar perguntas de acompanhamento.
 
-- [ ] **AGT-003 - Interpretação de intenção**  
+- [x] **AGT-003 - Interpretação de intenção**  
   Descrição: transformar pergunta em linguagem natural em intenção de investigação.
 
-- [ ] **AGT-004 - Seleção de tools**  
+- [x] **AGT-004 - Seleção de tools**  
   Descrição: decidir quais ferramentas internas devem ser usadas para responder a pergunta.
 
-- [ ] **AGT-005 - Tool `search_logs`**  
+- [x] **AGT-005 - Tool `search_logs`**  
   Descrição: buscar logs por período, serviço, nível, mensagem, request ID ou trace ID.
 
-- [ ] **AGT-006 - Tool `aggregate_errors`**  
+- [x] **AGT-006 - Tool `aggregate_errors`**  
   Descrição: agrupar erros semelhantes e contar frequência por assinatura, serviço e período.
 
-- [ ] **AGT-007 - Tool `get_trace_timeline`**  
+- [x] **AGT-007 - Tool `get_trace_timeline`**  
   Descrição: montar linha do tempo de eventos relacionados a um request ID ou trace ID.
 
-- [ ] **AGT-008 - Tool `search_docs`**  
+- [x] **AGT-008 - Tool `search_docs`**  
   Descrição: consultar documentação técnica indexada no serviço de RAG.
 
-- [ ] **AGT-009 - Tool `generate_incident_report`**  
+- [x] **AGT-009 - Tool `generate_incident_report`**  
   Descrição: gerar relatório técnico com resumo, impacto, evidências, hipótese e próximos passos.
 
-- [ ] **AGT-010 - Tool `create_github_issue`**  
+- [x] **AGT-010 - Tool `create_github_issue`**  
   Descrição: criar issue no GitHub a partir da investigação e do relatório técnico.
 
-- [ ] **AGT-011 - Geração de hipótese de causa raiz**  
+- [x] **AGT-011 - Geração de hipótese de causa raiz**  
   Descrição: propor causa mais provável para erro ou incidente com base em logs, traces e documentação.
 
-- [ ] **AGT-012 - Resposta com evidências**  
+- [x] **AGT-012 - Resposta com evidências**  
   Descrição: retornar resposta explicável com referências aos logs, trechos de documentação e dados usados.
 
-- [ ] **AGT-013 - Sugestão de próximos passos**  
+- [x] **AGT-013 - Sugestão de próximos passos**  
   Descrição: sugerir ações técnicas para continuar investigação, mitigar incidente ou abrir correção.
 
-- [ ] **AGT-014 - Integração com OpenSearch**  
+- [x] **AGT-014 - Integração com OpenSearch**  
   Descrição: consultar dados de logs por meio da tool de busca ou camada equivalente.
 
-- [ ] **AGT-015 - Integração com banco relacional**  
+- [x] **AGT-015 - Integração com banco relacional**  
   Descrição: acessar dados necessários de conversas, incidentes ou relatórios quando a investigação exigir.
 
-- [ ] **AGT-016 - Integração com provedor de IA**  
+- [x] **AGT-016 - Integração com provedor de IA**  
   Descrição: usar OpenAI API ou provedor compatível para execução do raciocínio do agente.
 
-- [ ] **AGT-017 - Tratamento de falhas de tools**  
+- [x] **AGT-017 - Tratamento de falhas de tools**  
   Descrição: responder de forma controlada quando uma tool falhar, sem ocultar que parte da investigação não foi concluída.
 
-- [ ] **AGT-018 - Métricas de uso do agente**  
+- [x] **AGT-018 - Métricas de uso do agente**  
   Descrição: registrar métricas futuras de uso, custo de tokens e qualidade das respostas.
 
 ## Docs RAG Service
